@@ -20,6 +20,7 @@ import Problem from '../Hooks/useCallback/Problem';
 import Solution from '../Hooks/useCallback/Solution';
 import ProblemUseMemo from '../Hooks/useMemo/ProblemUseMemo';
 import SolutionUseMemo from '../Hooks/useMemo/SolutionUseMemo';
+import CustomHook from '../Hooks/CustomHook/CustomHook';
 
 
 
@@ -51,6 +52,7 @@ function AllContent() {
             <Solution /> useCallback  */}
             {/* <ProblemUseMemo />
             <SolutionUseMemo /> */}
+            <CustomHook />
             { /* */}
         </>
     )
