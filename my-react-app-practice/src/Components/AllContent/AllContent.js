@@ -15,7 +15,10 @@ import UseRef from '../Hooks/UseRef';
 import UseRefForAccessOfDOM from '../Hooks/UseRefForAccessOfDOM';
 import UseStateUseEffectuseRef from '../Hooks/useContextHook/UseStateUseEffectuseRef';
 import UseReducer from '../Hooks/UseReducer';
-import UseCallback from '../Hooks/Todo0';
+import Todo0 from '../Hooks/Todo0';
+import Problem from '../Hooks/useCallback/Problem';
+import Solution from '../Hooks/useCallback/Solution';
+
 
 
 
@@ -40,7 +43,9 @@ function AllContent() {
             { /* <UseRefForAccessOfDOM /> */}
             { /* <UseStateUseEffectuseRef /> */}
             {/* <UseReducer /> */}
-            <UseCallback />
+            { /* <Todo0 /> */}
+            { /* <Problem /> */}
+            <Solution />
             { /* */}
         </>
     )
