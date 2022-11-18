@@ -18,6 +18,8 @@ import UseReducer from '../Hooks/UseReducer';
 import Todo0 from '../Hooks/Todo0';
 import Problem from '../Hooks/useCallback/Problem';
 import Solution from '../Hooks/useCallback/Solution';
+import ProblemUseMemo from '../Hooks/useMemo/ProblemUseMemo';
+import SolutionUseMemo from '../Hooks/useMemo/SolutionUseMemo';
 
 
 
@@ -44,8 +46,11 @@ function AllContent() {
             { /* <UseStateUseEffectuseRef /> */}
             {/* <UseReducer /> */}
             { /* <Todo0 /> */}
-            { /* <Problem /> */}
-            <Solution />
+            { /* Below useCallback */}
+            {/* <Problem /> useCallback
+            <Solution /> useCallback  */}
+            {/* <ProblemUseMemo />
+            <SolutionUseMemo /> */}
             { /* */}
         </>
     )
