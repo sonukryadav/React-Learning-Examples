@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Table from './table';
 
-export default function Form() {
+export default function ReactForm() {
     const [input, setInput] = useState({});
     const [inputs, setInputs] = useState([]);
     const [i, setI] = useState(0);
@@ -43,7 +43,7 @@ export default function Form() {
         image.src = URL.createObjectURL(event.target.files[0]);
     };
     return (
-        <>
+        <div style={{textAlign:'center', backgroundColor:'lightskyblue'}}>
             <hr />
             <p>-: I am from ReactFORM component :-</p>
 
@@ -82,6 +82,6 @@ export default function Form() {
             {inputs.length ? <Table d={inputs} /> : <p> No data</p>}
 
             <hr />
-        </>
+        </div>
     )
 }

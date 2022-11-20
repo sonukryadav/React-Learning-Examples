@@ -21,7 +21,8 @@ import Solution from '../Hooks/useCallback/Solution';
 import ProblemUseMemo from '../Hooks/useMemo/ProblemUseMemo';
 import SolutionUseMemo from '../Hooks/useMemo/SolutionUseMemo';
 import CustomHook from '../Hooks/CustomHook/CustomHook';
-import Form from '../SONU\'s TIMER/Form';
+import RecatStopwatch from '../SONU\'s TIMER/RecatStopwatch';
+import ReactForm from '../ReactForm/ReactForm';
 
 
 
@@ -54,7 +55,8 @@ function AllContent() {
             {/* <ProblemUseMemo />
             <SolutionUseMemo /> */}
             {/* <CustomHook /> */}
-            <Form />
+            {/* <RecatStopwatch /> */}
+            <ReactForm />
             { /* */}
         </>
     )
