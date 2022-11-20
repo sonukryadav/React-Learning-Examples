@@ -21,6 +21,7 @@ import Solution from '../Hooks/useCallback/Solution';
 import ProblemUseMemo from '../Hooks/useMemo/ProblemUseMemo';
 import SolutionUseMemo from '../Hooks/useMemo/SolutionUseMemo';
 import CustomHook from '../Hooks/CustomHook/CustomHook';
+import Form from '../SONU\'s TIMER/Form';
 
 
 
@@ -52,7 +53,8 @@ function AllContent() {
             <Solution /> useCallback  */}
             {/* <ProblemUseMemo />
             <SolutionUseMemo /> */}
-            <CustomHook />
+            {/* <CustomHook /> */}
+            <Form />
             { /* */}
         </>
     )
