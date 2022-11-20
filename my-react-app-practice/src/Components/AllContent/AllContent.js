@@ -1,64 +1,100 @@
-import React from 'react';
-import Form1 from '../Forms/Form1';
-import Garage from '../Garage/Garage';
-import Form2 from '../Forms/Form2';
-import Textarea from '../Textarea/Textarea';
-import Form3MultipleInput from '../Forms/Form3MultipleInput';
-import Select from '../Select/Select';
-import CSSStyle from '../CSSStyle/CSSStyle';
-import UseState1 from '../Hooks/useState1';
-import UseEffect1 from '../Hooks/UseEffect1';
-import UseEffect2 from '../Hooks/UseEffect2';
-import ContextProvider from '../Hooks/useContextHook/ContextProviderStep2';
-import UseuseContextHook from '../Hooks/useContextHook/UseuseContextHook';
-import UseRef from '../Hooks/UseRef';
-import UseRefForAccessOfDOM from '../Hooks/UseRefForAccessOfDOM';
-import UseStateUseEffectuseRef from '../Hooks/useContextHook/UseStateUseEffectuseRef';
-import UseReducer from '../Hooks/UseReducer';
-import Todo0 from '../Hooks/Todo0';
-import Problem from '../Hooks/useCallback/Problem';
-import Solution from '../Hooks/useCallback/Solution';
-import ProblemUseMemo from '../Hooks/useMemo/ProblemUseMemo';
-import SolutionUseMemo from '../Hooks/useMemo/SolutionUseMemo';
-import CustomHook from '../Hooks/CustomHook/CustomHook';
-import RecatStopwatch from '../SONU\'s TIMER/RecatStopwatch';
-import ReactForm from '../ReactForm/ReactForm';
+// import React from 'react';
+import Form1 from '../Random&w3/Forms/Form1';
+import Garage from '../Random&w3/Garage/Garage';
+import Form2 from '../Random&w3/Forms/Form2';
+import Textarea from '../Random&w3/Textarea/Textarea';
+import Form3MultipleInput from '../Random&w3/Forms/Form3MultipleInput';
+import Select from '../Random&w3/Select/Select';
+import CSSStyle from '../Random&w3/CSSStyle/CSSStyle';
+import UseState1 from '../Random&w3/Hooks/useState1';
+import UseEffect1 from '../Random&w3/Hooks/UseEffect1';
+import UseEffect2 from '../Random&w3/Hooks/UseEffect2';
+import ContextProvider from '../Random&w3/Hooks/useContextHook/ContextProviderStep2';
+import UseuseContextHook from '../Random&w3/Hooks/useContextHook/UseuseContextHook';
+import UseRef from '../Random&w3/Hooks/UseRef';
+import UseRefForAccessOfDOM from '../Random&w3/Hooks/UseRefForAccessOfDOM';
+import UseStateUseEffectuseRef from '../Random&w3/Hooks/useContextHook/UseStateUseEffectuseRef';
+import UseReducer from '../Random&w3/Hooks/UseReducer';
+import Todo0 from '../Random&w3/Hooks/Todo0';
+import Problem from '../Random&w3/Hooks/useCallback/Problem';
+import Solution from '../Random&w3/Hooks/useCallback/Solution';
+import ProblemUseMemo from '../Random&w3/Hooks/useMemo/ProblemUseMemo'
+import SolutionUseMemo from '../Random&w3/Hooks/useMemo/SolutionUseMemo';
+import CustomHook from '../Random&w3/Hooks/CustomHook/CustomHook';
+import RecatStopwatch from "../Random&w3/SONU's TIMER/RecatStopwatch";
+import ReactForm from '../Random&w3/ReactForm/ReactForm'
 
 
+
+const style0 = {
+    textAlign: 'center',
+}
+const style1 = {
+    textAlign: 'center',
+    border: '2px solid green',
+    boxShadow: '2px 2px 5px black',
+}
+const style2 = {
+    textAlign: 'center',
+    border: '2px solid red',
+    boxShadow: '2px 2px 5px black',
+}
 
 
 function AllContent() {
     return (
-        <>
-            {/* <Garage /> */}
-            {/* <Form1 /> */}
-            {/* <br/> */}
-            {/* <Form2 /> */}
-            {/* <br /> */}
-            {/* <Form3MultipleInput /> */}
-            {/* <Textarea /> */}
-            {/* <Select /> */}
-            {/* <CSSStyle /> */}
-            {/* <UseState1 /> */}
-            {/* <UseEffect1 /> */}
-            {/* <UseEffect2 /> */}
-            { /* <ContextProvider /> */}
-            { /* <UseuseContextHook /> */}
-            { /* <UseRef /> */ }
-            { /* <UseRefForAccessOfDOM /> */}
-            { /* <UseStateUseEffectuseRef /> */}
-            {/* <UseReducer /> */}
-            { /* <Todo0 /> */}
-            { /* Below useCallback */}
-            {/* <Problem /> useCallback
-            <Solution /> useCallback  */}
-            {/* <ProblemUseMemo />
-            <SolutionUseMemo /> */}
-            {/* <CustomHook /> */}
-            {/* <RecatStopwatch /> */}
-            <ReactForm />
-            { /* */}
-        </>
+        <div style={style0}>
+
+            <div style={style1}>
+                <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px' }}>-: Official docs Examples :-</h1>
+            
+            
+                {/* ----------------------------------OFFICIAL----------------------------------- */}
+                {/* ----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX------------------------- */}
+            
+            
+            </div>
+
+            <br/>
+            <hr style={{ border: '2px solid black', backgroundColor: 'black' }} />
+            <br/>
+
+            <div style={style2}>
+                <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px' }}>-: Random & w3 Examples :-</h1>
+            
+                {/* -----------------------------------W3------------------------------- */}
+                {/* <Garage /> */}
+                {/* <Form1 /> */}
+                {/* <Form2 /> */}
+                {/* <Form3MultipleInput /> */}
+                {/* <Textarea /> */}
+                {/* <Select /> */}
+                {/* <CSSStyle /> */}
+                {/* <UseState1 /> */}
+                {/* <UseEffect1 /> */}
+                {/* <UseEffect2 /> */}
+                {/* <ContextProvider /> */}
+                {/* <UseuseContextHook /> */}
+                {/* <UseRef /> */}
+                {/* <UseRefForAccessOfDOM /> */}
+                {/* <UseStateUseEffectuseRef /> */}
+                {/* <UseReducer /> */}
+                {/* <Todo0 /> */}
+                {/* <Problem /> */}
+                {/* <Solution /> */}
+                {/* <ProblemUseMemo /> */}
+                {/* <SolutionUseMemo /> */}
+                {/* <CustomHook /> */}
+                {/* <RecatStopwatch /> */}
+                {/* <ReactForm /> */}
+                {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
+            
+            
+                {/* ------------------------------RANDOM-------------------------------- */}
+                {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
+            
+            </div>
+        </div>
     )
 }
 
