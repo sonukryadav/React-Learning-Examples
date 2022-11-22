@@ -22,7 +22,8 @@ import ProblemUseMemo from '../Random&w3/Hooks/useMemo/ProblemUseMemo'
 import SolutionUseMemo from '../Random&w3/Hooks/useMemo/SolutionUseMemo';
 import CustomHook from '../Random&w3/Hooks/CustomHook/CustomHook';
 import RecatStopwatch from "../Random&w3/SONU's TIMER/RecatStopwatch";
-import ReactForm from '../Random&w3/ReactForm/ReactForm'
+import ReactForm from '../Random&w3/ReactForm/ReactForm';
+import AppEcommerce from '../Random&w3/e-commerce-c3/AppEcommerce';
 
 
 
@@ -33,11 +34,13 @@ const style1 = {
     textAlign: 'center',
     border: '2px solid green',
     boxShadow: '2px 2px 5px black',
+    padding:'10px',
 }
 const style2 = {
     textAlign: 'center',
     border: '2px solid red',
     boxShadow: '2px 2px 5px black',
+    padding: '10px',
 }
 
 
@@ -91,6 +94,7 @@ function AllContent() {
             
             
                 {/* ------------------------------RANDOM-------------------------------- */}
+                <AppEcommerce />
                 {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
             
             </div>
