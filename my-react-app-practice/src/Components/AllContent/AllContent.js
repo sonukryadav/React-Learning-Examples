@@ -1,4 +1,3 @@
-// import React from 'react';
 import Form1 from '../Random&w3/Forms/Form1';
 import Garage from '../Random&w3/Garage/Garage';
 import Form2 from '../Random&w3/Forms/Form2';
@@ -24,6 +23,7 @@ import CustomHook from '../Random&w3/Hooks/CustomHook/CustomHook';
 import RecatStopwatch from "../Random&w3/SONU's TIMER/RecatStopwatch";
 import ReactForm from '../Random&w3/ReactForm/ReactForm';
 import AppEcommerce from '../Random&w3/e-commerce-c3/AppEcommerce';
+import NewUser from '../Random&w3/React-Redux/NewUser';
 
 
 
@@ -91,10 +91,10 @@ function AllContent() {
                 {/* <RecatStopwatch /> */}
                 {/* <ReactForm /> */}
                 {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
-            
-            
+                
                 {/* ------------------------------RANDOM-------------------------------- */}
-                <AppEcommerce />
+                {/* <AppEcommerce /> */}
+                {/* <NewUser />  React-Redux */}
                 {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
             
             </div>
