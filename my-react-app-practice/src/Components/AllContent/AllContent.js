@@ -24,6 +24,8 @@ import RecatStopwatch from "../Random&w3/SONU's TIMER/RecatStopwatch";
 import ReactForm from '../Random&w3/ReactForm/ReactForm';
 import AppEcommerce from '../Random&w3/e-commerce-c3/AppEcommerce';
 import NewUser from '../Random&w3/React-Redux/NewUser';
+import Button from '../Random&w3/ChakraUI/Button';
+import { Input } from '@chakra-ui/react';
 
 
 
@@ -95,6 +97,8 @@ function AllContent() {
                 {/* ------------------------------RANDOM-------------------------------- */}
                 {/* <AppEcommerce /> */}
                 {/* <NewUser />  React-Redux */}
+                <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' />
+                <Input placeholder='Basic usage' width='400px' />
                 {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
             
             </div>
