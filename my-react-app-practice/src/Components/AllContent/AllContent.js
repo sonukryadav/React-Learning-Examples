@@ -97,8 +97,8 @@ function AllContent() {
                 {/* ------------------------------RANDOM-------------------------------- */}
                 {/* <AppEcommerce /> */}
                 {/* <NewUser />  React-Redux */}
-                <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' />
-                <Input placeholder='Basic usage' width='400px' />
+                {/* <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' /> */}
+                {/* <Input placeholder='Basic usage' width='400px' /> */}
                 {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
             
             </div>
