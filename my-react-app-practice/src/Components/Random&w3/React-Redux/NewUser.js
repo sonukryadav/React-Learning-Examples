@@ -10,6 +10,7 @@ export default function NewUser() {
   const addusers = (e) => {
     e.preventDefault();
     userAction1(name, dispatch);
+    setName("");
   }
   
   const dispatch = useDispatch();

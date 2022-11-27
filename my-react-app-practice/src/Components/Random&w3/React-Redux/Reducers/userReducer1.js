@@ -1,4 +1,5 @@
-
+import { newUserActionType } from "../ActionTypes/NewUserType";
+import { userActionDelete } from "../ActionTypes/NewUserType";
 
 let initialData = {
     users: [],
@@ -6,12 +7,12 @@ let initialData = {
 
 const userReducer1 = (storeData = initialData, action) => {
     switch (action.type) {
-        case "USERS": {
+        case newUserActionType: {
            return {
                 ...storeData, users: [...storeData.users, action.payload],
             }
         }
-        case "Delete": {
+        case userActionDelete: {
             return {
                 ...storeData, users: action.payload,
             };
