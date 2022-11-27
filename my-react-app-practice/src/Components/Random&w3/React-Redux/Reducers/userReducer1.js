@@ -1,14 +1,14 @@
 
 
 let initialData = {
-    name: [],
+    users: [],
 }
 
 const userReducer1 = (storeData = initialData, action) => {
     switch (action.type) {
         case "USERS": {
            return {
-                ...storeData,user: [...storeData.users, action.payload],
+                ...storeData, users: [...storeData.users, action.payload],
             }
         }
         case "Delete": {

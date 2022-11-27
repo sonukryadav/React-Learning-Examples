@@ -65,7 +65,7 @@ function AllContent() {
             <br/>
 
             <div style={style2}>
-                <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px' }}>-: Random & w3 Examples :-</h1>
+                <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px',marginBottom:'30px' }}>-: Random & w3 Examples :-</h1>
             
                 {/* -----------------------------------W3------------------------------- */}
                 {/* <Garage /> */}
@@ -96,7 +96,7 @@ function AllContent() {
                 
                 {/* ------------------------------RANDOM-------------------------------- */}
                 {/* <AppEcommerce /> */}
-                {/* <NewUser />  React-Redux */}
+                <NewUser />
                 {/* <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' /> */}
                 {/* <Input placeholder='Basic usage' width='400px' /> */}
                 {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}

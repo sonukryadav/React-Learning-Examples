@@ -1,17 +1,17 @@
 
 
-export const userAction1 = (data, dispatch) => { 
-    
+export const userAction1 = (payload, dispatch) => { 
+
     dispatch({
         type: "USERS",
-        payload: data,
+        payload: payload,
     })
 
 };
 
-export const deleteUserAction = (data, dispatch) => {
-    dispatch({
-        type:"DELETE",
-    });
-}
+// export const deleteUserAction = (data, dispatch) => {
+//     dispatch({
+//         type:"DELETE",
+//     });
+// }
 
