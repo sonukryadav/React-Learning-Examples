@@ -4,7 +4,7 @@ import { deleteUserAction } from './Actions/userAction1';
 
 const ShowUsers = () => {
 
-    const data = useSelector((storedData) => storedData.users);
+    const data = useSelector((storedData) => storedData.userReducer1.users);
     const dispatch = useDispatch();
 
     const deleteUser = (index) => {

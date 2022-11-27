@@ -1,7 +1,7 @@
 import { newUserActionType } from "../ActionTypes/NewUserType";
 import { userActionDelete } from "../ActionTypes/NewUserType";
 
-export const userAction1 = (payload, dispatch) => { 
+export const userAction1 = (payload, dispatch) => {
 
     dispatch({
         type: newUserActionType,
@@ -16,7 +16,7 @@ export const deleteUserAction = (payload, dispatch, index) => {
     let newArray = [...payload];
     dispatch({
         type: userActionDelete,
-        payload:newArray,
+        payload: newArray,
     });
-}
+};
 
