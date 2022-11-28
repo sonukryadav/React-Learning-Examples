@@ -1,6 +1,6 @@
 import { Switch } from '@chakra-ui/react';
 import React, { memo } from 'react';
-import { proctuctJeweleryActionType, productElectronicActionType } from '../ActionTypes/NewUserType';
+import { proctuctJeweleryActionType, productElectronicActionType, addtocart } from '../ActionTypes/NewUserType';
 
 
 var initialData = {
@@ -8,6 +8,7 @@ var initialData = {
     jewelery: [],
     mensWearing: [],
     womensWearing: [],
+    cart:[]
 };
 
 const productReducer = (data = initialData, action) => {
@@ -22,6 +23,12 @@ const productReducer = (data = initialData, action) => {
             return {
                 ...data,
                 jewelery: action.payload,
+            }
+        }
+        case addtocart: {
+            return {
+                ...data,
+                cart: action.payload,
             }
         }
         default: {

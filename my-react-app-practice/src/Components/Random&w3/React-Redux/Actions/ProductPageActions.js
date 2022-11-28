@@ -1,4 +1,8 @@
-import { proctuctJeweleryActionType, productElectronicActionType } from "../ActionTypes/NewUserType";
+import {
+    proctuctJeweleryActionType,
+    productElectronicActionType,
+    addtocart,
+} from "../ActionTypes/NewUserType";
 
 export const electronicAction = (payload, dispatch) => {
 
@@ -14,4 +18,12 @@ export const jewelryAction = (payload, dispatch) => {
         type: proctuctJeweleryActionType,
         payload: payload,
     });
+}
+
+export const AddToCart = (payload, dispatch) => {
+
+    dispatch({
+        type: addtocart,
+        payload: payload,
+    })
 }

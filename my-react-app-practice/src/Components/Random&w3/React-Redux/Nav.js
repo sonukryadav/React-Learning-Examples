@@ -18,8 +18,9 @@ const Nav = () => {
         <div style={style}>
         <div><NavLink to='/homeRedux' style={{color:'yellow'}}>Home</NavLink></div>
         <div><NavLink to='/productRedux' style={{ color: 'yellow' }}>Products</NavLink></div>
-          </div>
-          <div><Outlet/></div>
+        <div><NavLink to='/cart' style={{ color: 'yellow' }}>Cart</NavLink></div>
+      </div>
+      
     </div>
   )
 }

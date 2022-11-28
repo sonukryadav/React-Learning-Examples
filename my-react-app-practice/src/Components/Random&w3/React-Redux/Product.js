@@ -2,6 +2,7 @@ import React, { useEffect, memo } from 'react';
 import { electronicAction, jewelryAction } from './Actions/ProductPageActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, Outlet } from 'react-router-dom';
+import { store } from './ReduxStore/store';
 
 const Product = () => {
 
@@ -38,6 +39,8 @@ const Product = () => {
       .then((json) => jewelryAction(json, dispatch));
   };
 
+
+  console.log(store.getState());
 
 
 

@@ -5,6 +5,7 @@ import ReduxWeb from './ReduxWeb';
 import Nav from './Nav';
 import NewUser from './NewUser';
 import ProductDetails from './ProductDetails';
+import Cart from './Cart';
 
 const Routing = () => {
   return (
@@ -13,6 +14,7 @@ const Routing = () => {
         <Route path='/homeRedux' element={<NewUser />} />
         <Route path='/productRedux' element={<Product />} />
         <Route path='/productRedux/:id' element={<ProductDetails />} />
+        <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<h2>Page not found!!</h2>}/>
       </Routes>
     </div>
