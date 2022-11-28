@@ -9,14 +9,15 @@ const Nav = () => {
         color: 'lightblue',
         padding: '10px',
         justifyContent: 'space-evenly',
-        margin:'10px 0',
+      margin: '10px 0',
+        color:'yellow'
     }
   return (
       <div>
         <h1>React Redux</h1>
         <div style={style}>
-            <div><NavLink to='/homeRedux'>Home</NavLink></div>
-            <div><NavLink to='/productRedux'>Products</NavLink></div>
+        <div><NavLink to='/homeRedux' style={{color:'yellow'}}>Home</NavLink></div>
+        <div><NavLink to='/productRedux' style={{ color: 'yellow' }}>Products</NavLink></div>
           </div>
           <div><Outlet/></div>
     </div>
