@@ -8,7 +8,7 @@ let initialData = {
 const userReducer1 = (storeData = initialData, action) => {
     switch (action.type) {
         case newUserActionType: {
-           return {
+            return {
                 ...storeData, users: [...storeData.users, action.payload],
             }
         }
@@ -20,7 +20,7 @@ const userReducer1 = (storeData = initialData, action) => {
         default: {
             return storeData;
         }
-        
+
     }
 
 };

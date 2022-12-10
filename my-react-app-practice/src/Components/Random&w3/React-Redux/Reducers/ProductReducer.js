@@ -8,7 +8,7 @@ var initialData = {
     jewelery: [],
     mensWearing: [],
     womensWearing: [],
-    cart:[]
+    cart: []
 };
 
 const productReducer = (data = initialData, action) => {
