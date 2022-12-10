@@ -50,23 +50,25 @@ function AllContent() {
     return (
         <div style={style0}>
 
+
+            {/* --------------------------------------------------------------------------------------------------------------------- */}
             <div style={style1}>
                 <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px' }}>-: Official docs Examples :-</h1>
-            
-            
-                {/* ----------------------------------OFFICIAL----------------------------------- */}
+                {/* ----------------------------------OFFICIAL React----------------------------------- */}
                 {/* ----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX------------------------- */}
-            
-            
             </div>
-
+            {/* ---------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---------------------------------- */}
             <br/>
             <hr style={{ border: '2px solid black', backgroundColor: 'black' }} />
             <br/>
 
+            {/* --------------------------------------------------------------------------------------------------------------------- */}
             <div style={style2}>
-                <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px',marginBottom:'30px' }}>-: Random & w3 Examples :-</h1>
-            
+                <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px', marginBottom: '30px' }}>-: Random & w3 Examples :-</h1>
+
+
+
+
                 {/* -----------------------------------W3------------------------------- */}
                 {/* <Garage /> */}
                 {/* <Form1 /> */}
@@ -92,16 +94,20 @@ function AllContent() {
                 {/* <CustomHook /> */}
                 {/* <RecatStopwatch /> */}
                 {/* <ReactForm /> */}
-                {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
-                
+                {/* -----------------XXXXXXXXXXXXXXXX--W3--XXXXXXXXXXXXXXXXXXXX--------------- */}
+
+
+
+
                 {/* ------------------------------RANDOM-------------------------------- */}
                 {/* <AppEcommerce /> */}
                 <ReduxWeb />
                 {/* <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' /> */}
                 {/* <Input placeholder='Basic usage' width='400px' /> */}
-                {/* -----------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------------- */}
-            
+                {/* -----------------XXXXXXXXXXXXXXXXX--RANDOM--XXXXXXXXXXXXXXXXXXX--------------- */}
+                {/* ---------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---------------------------------- */}
             </div>
+            {/* ---------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---------------------------------- */}
         </div>
     )
 }
