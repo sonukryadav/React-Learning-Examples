@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 
-const Button = (count, increase) => {
+const Button = ({ data, fun }) => {
     return (
         <div>
-            <button onClick={increase}>Clicked {count} times</button>
+            <button onClick={fun}>Clicked {data} times</button>
         </div>
     )
 }
@@ -12,14 +12,21 @@ const Button = (count, increase) => {
 
 
 const MyButton3 = () => {
+
+    const [value, setValue] = useState(0);
+
+    const countIncrease = () => {
+        setValue(value + 1);
+    };
+
     return (
         <div>
             <h3>Counters that update together</h3>
-            <Button />
+            <Button data={value} fun={countIncrease} />
             <br />
-            <Button />
+            <Button data={value} fun={countIncrease} />
         </div>
     )
-}
+};
 
 export default MyButton3;
