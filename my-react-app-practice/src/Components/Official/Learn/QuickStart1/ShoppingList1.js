@@ -20,6 +20,7 @@ const ShoppingList = () => {
 
     return (
         <div>
+            <h3>map for array</h3>
             <ul>{listItems}</ul>
         </div>
     )
