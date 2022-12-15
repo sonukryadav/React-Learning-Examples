@@ -26,6 +26,10 @@ import AppEcommerce from '../Random&w3/e-commerce-c3/AppEcommerce';
 import Button from '../Random&w3/ChakraUI/Button';
 import { Input } from '@chakra-ui/react';
 import ReduxWeb from '../Random&w3/React-Redux/ReduxWeb';
+import Counter from '../Random&w3/Counter/Counter';
+
+// -----------------------Official documentation --------------------
+import QuickStart from '../Official/Learn/QuickStart1/QuickStart';
 
 
 
@@ -53,6 +57,7 @@ function AllContent() {
             <div style={style1}>
                 <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px' }}>-: Official docs Examples :-</h1>
                 {/* ----------------------------------OFFICIAL REACT--------------------------------------- */}
+                <QuickStart />
                 {/* ----------------XXXXXXXXX---------OFFICIAL REACT----XXXXXXXXXX------------------------- */}
             </div>
             {/*----------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---------------------------------- */}
@@ -95,9 +100,10 @@ function AllContent() {
 
                 {/* ---------------------------------RANDOM------------------------------------ */}
                 {/* <AppEcommerce /> */}
-                <ReduxWeb />
+                {/* <ReduxWeb /> */}
                 {/* <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' /> */}
                 {/* <Input placeholder='Basic usage' width='400px' /> */}
+                {/* <Counter /> */}
                 {/* -----------------XXXXXXXXXXXXXXXXX--RANDOM--XXXXXXXXXXXXXXXXXXX--------------- */}
             </div>
             {/* ---------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---------------------------------- */}

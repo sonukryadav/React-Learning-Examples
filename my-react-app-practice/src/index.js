@@ -16,6 +16,4 @@ root.render(
             </Provider>
        {/* </ChakraProvider> */}
     </BrowserRouter>
-    
-    
 );
