@@ -39,7 +39,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
                     key={product.category} />
             );
         }
-        console.log(id)
+        // console.log(id)
 
         rows.push(
             <ProductRow key={product.name} product={product} />
