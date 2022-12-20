@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const Button = ({ data, fun }) => {
     return (
         <div>
-            <button onClick={fun}>Clicked {data} times</button>
+            <button onClick={()=>fun(1)}>Clicked {data} times</button>
         </div>
     )
 }
@@ -15,8 +15,8 @@ const MyButton3 = () => {
 
     const [value, setValue] = useState(0);
 
-    const countIncrease = () => {
-        setValue(value + 1);
+    const countIncrease = (p) => {
+        setValue(value + p);
     };
 
     return (
