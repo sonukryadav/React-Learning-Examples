@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 
 const ProductCategoryRow = ({category})=>{
@@ -20,11 +20,19 @@ const ProductRow = ({ product }) => {
     );
 }
 
-const ProductTable = ({ products }) => {
+const ProductTable = ({ products, filterText, inStockOnly }) => {
     const rows = [];
     let lastCategory = null;
 
-    products.forEach(product => {
+    products.forEach((product) => {
+        if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
+            return;
+        }
+
+        if (inStockOnly && !product.stocked) {
+            return;
+        }
+
         if (product.category !== lastCategory) {
             rows.push(
                 <ProductCategoryRow category={product.category}
@@ -51,13 +59,15 @@ const ProductTable = ({ products }) => {
     );
 }
 
-const SearchBar = () => {
+const SearchBar = ({ filterText, inStockOnly, onFilterTextChange, onInStockOnlyChange}) => {
     return (
         <form>
-            <input type="text" placeholder="Search..." />
+            <input type="text" value={filterText} placeholder="Search..."
+            onChange={(e)=> onFilterTextChange(e.target.value)} />
             <br/>
             <label>
-                <input type="checkbox" />
+                <input type="checkbox" checked={inStockOnly}
+                onChange={(e)=> onInStockOnlyChange(e.target.checked)} />
                 {' '}
                 Only show products in stock
             </label>
@@ -67,10 +77,13 @@ const SearchBar = () => {
 
 
 const FilterProductTable = ({ products }) => {
+    const [filterText, setFilterText] = useState('');
+    const [inStockOnly, setInStockOnly] = useState(false);
     return (
         <div>
-            <SearchBar />
-            <ProductTable products={products} />
+            <SearchBar filterText={filterText} inStockOnly={inStockOnly}
+                onFilterTextChange={setFilterText} onInStockOnlyChange={setInStockOnly} />
+            <ProductTable products={products} filterText={filterText} inStockOnly={inStockOnly} />
         </div>
     );
 }
