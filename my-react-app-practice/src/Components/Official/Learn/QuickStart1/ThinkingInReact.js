@@ -24,7 +24,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
     const rows = [];
     let lastCategory = null;
 
-    products.forEach((product) => {
+    products.forEach((product, id) => {
         if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
             return;
         }
@@ -39,6 +39,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
                     key={product.category} />
             );
         }
+        console.log(id)
 
         rows.push(
             <ProductRow key={product.name} product={product} />
