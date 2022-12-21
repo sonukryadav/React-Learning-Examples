@@ -8,6 +8,7 @@ const QuickStart = () => {
     return (
         <div>
             <hr />
+            <hr />
             <h1>Quickstart</h1>
             <ShoppingList />
             <hr/>

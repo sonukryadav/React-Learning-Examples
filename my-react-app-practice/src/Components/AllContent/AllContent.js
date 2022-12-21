@@ -30,6 +30,7 @@ import Counter from '../Random&w3/Counter/Counter';
 
 // -----------------------Official documentation --------------------
 import QuickStart from '../Official/Learn/QuickStart1/QuickStart';
+import ManagingState from '../Official/Learn/ManagingState4/ManagingState';
 
 
 
@@ -58,6 +59,7 @@ function AllContent() {
                 <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px' }}>-: Official docs Examples :-</h1>
                 {/* ----------------------------------OFFICIAL REACT--------------------------------------- */}
                 <QuickStart />
+                <ManagingState />
                 {/* ----------------XXXXXXXXX---------OFFICIAL REACT----XXXXXXXXXX------------------------- */}
             </div>
             {/*----------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---------------------------------- */}
