@@ -3,7 +3,10 @@ import React, { useState } from 'react'
 const ChoosingTheStateStructure2 = () => {
     return (
         <div>
-          <MovingDot/>
+            <hr/>
+            <MovingDot />
+            <hr />
+            <FeedbackForm />
         </div>
     )
 }
@@ -14,8 +17,6 @@ function MovingDot() {
         x: 0,
         y:0
     });
-
-
     return (
         <div
             onPointerMove={e => {
@@ -34,10 +35,10 @@ function MovingDot() {
 
             <div style={{
                 position: 'absolute',
-                boxShadow:'10px 10px 200px 100px white',
+                boxShadow:'1px 1px 20px 10px white',
                 backgroundColor: 'red',
                 borderRadius: '50%',
-                transform: `translate(${position.x-20}px, ${position.y-150}px)`,
+                transform: `translate(${position.x}px, ${position.y}px)`,
                 left: -10,
                 top: -10,
                 width: 20,
@@ -45,6 +46,46 @@ function MovingDot() {
             }} />
             </div>
     );
+}
+
+
+const FeedbackForm = () => {
+    const [text, setText] = useState('');
+    const [status, setStatus] = useState('typing');
+
+    const handelSubmit = async (e) => {
+        e.preventDefault();
+        setStatus('sending');
+        await sendMessage(text);
+        setStatus('sent');
+    }
+
+    const isSending = status === 'sending';
+    const isSent = status === 'sent';
+
+    if (isSent) {
+        return <h1>Thanks for feedback!</h1>
+    }
+
+    return (
+        <div>
+            <form onSubmit={handelSubmit}>
+                <p>How was your stay at The Prancing Pony?</p>
+                <textarea value={text} onChange={e=>setText(e.target.value)} disabled={isSending} />
+                <br/>
+                <button type='submit' disabled={isSending}>Submit</button>
+            </form>
+            {isSending && <p>Sending...</p> }
+
+        </div>
+    );
+
+};
+
+function sendMessage(text) {
+    return new Promise(resolve => {
+        setTimeout(resolve, 2000);
+    });
 }
 
 
