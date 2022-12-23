@@ -24,6 +24,10 @@ const Form = () => {
         setAnswer(e.target.value);
     }
 
+    if (status === 'success') {
+        return <h1>That's right!</h1>
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('submitting');
@@ -60,7 +64,6 @@ const submitForm = (answer) => {
                 reject(new Error('Good guess but a wrong answer. Try again'));
             } else {
                 resolve();
-                alert("Correct answer.")
             }
         }, 1500);
     });
