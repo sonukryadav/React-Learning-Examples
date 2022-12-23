@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import ChoosingTheStateStructure2 from './ChoosingTheStateStructure2';
 
 
 const ManagingState = () => {
@@ -8,6 +9,7 @@ const ManagingState = () => {
             <hr />
             <h1>Managing State</h1>
             <Form />
+            <ChoosingTheStateStructure2 />
         </div>
     );
 }
