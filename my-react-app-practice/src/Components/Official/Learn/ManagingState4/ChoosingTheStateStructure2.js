@@ -88,10 +88,6 @@ function sendMessage(text) {
     });
 }
 
-
-
-
-
 export default ChoosingTheStateStructure2;
 
 
