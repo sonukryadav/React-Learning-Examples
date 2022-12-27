@@ -70,7 +70,7 @@ const submitForm = (answer) => {
         }, 1500);
     });
 }
-// ----------xxx-----------------City quiz------------xxx-------------------------
+// ----------xxx-----------------City quiz------------xxx-------------------------//
 
 export default ManagingState;
 
