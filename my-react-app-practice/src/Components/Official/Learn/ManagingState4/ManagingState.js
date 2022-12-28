@@ -1,4 +1,4 @@
-import React, { useState, useReducer, createContext } from 'react';
+import React, { useState, useReducer, createContext, useContext } from 'react';
 import ChoosingTheStateStructure2 from './ChoosingTheStateStructure2';
 
 
@@ -286,6 +286,14 @@ const TasksProvider = ({ children }) => {
 
 
 function tasksReducer2(tasks, dispatch){
+}
+
+function useTask() {
+    return useContext(TaskDispatchContext);
+}
+
+function useTasksDispatch() {
+    return useContext(TaskDispatchContext);
 }
 
 
