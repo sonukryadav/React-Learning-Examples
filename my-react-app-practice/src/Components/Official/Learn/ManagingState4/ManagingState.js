@@ -310,7 +310,7 @@ function tasksReducer2(tasks, action) {
         }
         case 'deleted': {
             return tasks.filter((t) => {
-                return t.id === action.id;
+                return t.id !== action.id;
             })
             }
         default: {
