@@ -15,6 +15,7 @@ const ManagingState = () => {
             <h2 style={{ color: 'blue', textDecoration: 'underline' }}>Extracting state logic into a reducer</h2>
             <TaskApp />
             <h2 style={{ color: 'blue', textDecoration: 'underline' }}>Scaling up with reducer and context </h2>
+            <TaskApp2 />
 
             {/* <ChoosingTheStateStructure2 /> */}
         </div>
@@ -269,31 +270,155 @@ const initialTasks2 = [
     { id: 1, text: 'Visit the temple', done: false },
     { id: 2, text: 'Drink matcha', done: false }
 ];
+let nextId2 = 3;
 
 const TasksContext = createContext(null);
-const TaskDispatchContext = createContext(null);
+const TasksDispatchContext = createContext(null);
 
 const TasksProvider = ({ children }) => {
-    const [tasks, dispatch] = useReducer(tasksReducer2, initialTasks);
+    const [tasks, dispatch] = useReducer(tasksReducer2, initialTasks2);
     return (
-        <TasksContext.Provider>
-            <TaskDispatchContext.Provider value={dispatch}>
+        <TasksContext.Provider value={tasks}>
+            <TasksDispatchContext.Provider value={dispatch}>
                 {children}
-            </TaskDispatchContext.Provider>
+            </TasksDispatchContext.Provider>
         </TasksContext.Provider>
     );
 }
 
 
-function tasksReducer2(tasks, dispatch){
+function tasksReducer2(tasks, action) {
+    switch (action.type) {
+        case 'added': {
+            return [...tasks, {
+                id: action.id,
+                text: action.text,
+                done:false
+            }];
+        }
+        case 'changed': {
+            return (
+                tasks.map((t) => {
+                    if (t.id === action.task.id) {
+                        return (action.task);
+                    }
+                    else {
+                        return t;
+                    }
+                })
+            );
+        }
+        case 'deleted': {
+            return tasks.filter((t) => {
+                return t.id === action.id;
+            })
+            }
+        default: {
+            throw Error('Unknown action: ' + action.type);
+        }
+    }
 }
 
-function useTask() {
-    return useContext(TaskDispatchContext);
+function TaskApp2() {
+    return (
+        <TasksProvider>
+            <h1>Day off in Masai</h1>
+            <AddTask2 />
+            <TaskList2 />
+        </TasksProvider>
+    );
+}
+
+function useTasks() {
+    return useContext(TasksContext);
 }
 
 function useTasksDispatch() {
-    return useContext(TaskDispatchContext);
+    return useContext(TasksDispatchContext);
+}
+
+function AddTask2() {
+    const [text, setText] = useState('');
+    const dispatch = useTasksDispatch();
+    return (<>
+        <input placeholder='Add task' value={text} onChange={e => setText(e.target.value)} />
+        <button onClick={() => {
+            setText('');
+            dispatch({
+                type: 'added',
+                id: nextId2++,
+                text: text,
+            });
+        }}>Add</button>
+    </>);
+}
+
+function TaskList2() {
+    const tasks   = useTasks();
+    return (
+        <ul>
+            {tasks.map((task) => (
+                <li key={task.id}>
+                    <Task2 task={ task}/>
+                </li>
+            ))}
+        </ul>
+    );
+}
+
+function Task2({ task}) {
+    const [isEditing, setIsEditing] = useState(false);
+    const dispatch = useTasksDispatch();
+    let taskContent;
+    if (isEditing) {
+        taskContent = (
+            <>
+                <input value={task.text} onChange={e => {
+                    dispatch({
+                        type: 'changed',
+                        task: {
+                            ...task,
+                            text: e.target.value
+                        }
+                    });
+                }} />
+                <button onClick={() => setIsEditing(false)}>Save</button>
+            </>
+        );
+    } else {
+        taskContent = (
+            <>
+                {task.text}
+                <button onClick={() => setIsEditing(true)}>
+                    Edit
+                </button>
+            </>
+        );
+    }
+    return (
+        <label>
+            <input type="checkbox"
+                checked={task.done}
+                onChange={e => {
+                    dispatch({
+                        type: 'changed',
+                        task: {
+                            ...task, done: e.target.checked
+                        }
+                    });
+                }}
+            />
+            {taskContent}
+            <button onClick={() => {
+                dispatch({
+                    type: 'deleted',
+                    id: task.id,
+                });
+            }}>
+                Delete
+            </button>
+        </label>
+    );
 }
 
 

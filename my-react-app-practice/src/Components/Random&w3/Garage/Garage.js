@@ -10,7 +10,7 @@ function Garage() {
         <>
             <h1>Who lives in my garage?</h1>
             <ul>
-                {cars.map((car) => <Car brand={car} />)}
+                {cars.map((car, id) => <Car key={id} brand={car} />)}
             </ul>
         </>
     );
