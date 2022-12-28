@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from 'react';
+import React, { useState, useReducer, createContext } from 'react';
 import ChoosingTheStateStructure2 from './ChoosingTheStateStructure2';
 
 
@@ -14,6 +14,8 @@ const ManagingState = () => {
             <Accordion />
             <h2 style={{ color: 'blue', textDecoration: 'underline' }}>Extracting state logic into a reducer</h2>
             <TaskApp />
+            <h2 style={{ color: 'blue', textDecoration: 'underline' }}>Scaling up with reducer and context </h2>
+
             {/* <ChoosingTheStateStructure2 /> */}
         </div>
     );
@@ -258,6 +260,36 @@ function Task({ task, onChange, onDelete }) {
         </label>
     );
 }
+
+
+//------------------Scaling up with reducer and context---------------------
+// TaskApp --> with context and reducer
+const initialTasks2 = [
+    { id: 0, text: 'Philosopher’s Path', done: true },
+    { id: 1, text: 'Visit the temple', done: false },
+    { id: 2, text: 'Drink matcha', done: false }
+];
+
+const TasksContext = createContext(null);
+const TaskDispatchContext = createContext(null);
+
+const TasksProvider = ({ children }) => {
+    const [tasks, dispatch] = useReducer(tasksReducer2, initialTasks);
+    return (
+        <TasksContext.Provider>
+            <TaskDispatchContext.Provider value={dispatch}>
+                {children}
+            </TaskDispatchContext.Provider>
+        </TasksContext.Provider>
+    );
+}
+
+
+function tasksReducer2(tasks, dispatch){
+}
+
+
+//-----xxx----------Scaling up with reducer and context---------xxx---------
 
 
 

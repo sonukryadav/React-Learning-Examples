@@ -71,41 +71,41 @@ function AllContent() {
             <div style={style2}>
                 <h1 style={{ backgroundColor: 'lightskyblue', padding: '1px', marginBottom: '30px' }}>-: Random & w3 Examples :-</h1>
                 {/* ------------------------------------W3--------------------------------- */}
-                {/* <Garage /> */}
-                {/* <Form1 /> */}
-                {/* <Form2 /> */}
-                {/* <Form3MultipleInput /> */}
-                {/* <Textarea /> */}
-                {/* <Select /> */}
-                {/* <CSSStyle /> */}
-                {/* <UseState1 /> */}
-                {/* <UseEffect1 /> */}
-                {/* <UseEffect2 /> */}
-                {/* <ContextProvider /> */}
-                {/* <UseuseContextHook /> */}
-                {/* <UseRef /> */}
-                {/* <UseRefForAccessOfDOM /> */}
-                {/* <UseStateUseEffectuseRef /> */}
-                {/* <UseReducer /> */}
-                {/* <Todo0 /> */}
-                {/* <Problem /> */}
-                {/* <Solution /> */}
-                {/* <ProblemUseMemo /> */}
-                {/* <SolutionUseMemo /> */}
-                {/* <CustomHook /> */}
-                {/* <RecatStopwatch /> */}
-                {/* <ReactForm /> */}
+                <Garage />
+                <Form1 />
+                <Form2 />
+                <Form3MultipleInput />
+                <Textarea />
+                <Select />
+                <CSSStyle />
+                <UseState1 />
+                <UseEffect1 />
+                <UseEffect2 />
+                <ContextProvider />
+                <UseuseContextHook />
+                <UseRef />
+                <UseRefForAccessOfDOM />
+                <UseStateUseEffectuseRef />
+                <UseReducer />
+                <Todo0 />
+                <Problem />
+                <Solution />
+                <ProblemUseMemo />
+                <SolutionUseMemo />
+                <CustomHook />
+                <RecatStopwatch />
+                <ReactForm />
                 {/* -----------------XXXXXXXXXXXXXXXX--W3--XXXXXXXXXXXXXXXXXXXX--------------- */}
 
 
 
 
                 {/* ---------------------------------RANDOM------------------------------------ */}
-                {/* <AppEcommerce /> */}
-                {/* <ReduxWeb /> */}
-                {/* <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' /> */}
-                {/* <Input placeholder='Basic usage' width='400px' /> */}
-                {/* <Counter /> */}
+                <AppEcommerce />
+                <ReduxWeb />
+                <Button name='Angular' color='white' bgColor='black' margin='5px' pad='5px' />
+                <Input placeholder='Basic usage' width='400px' />
+                <Counter />
                 {/* -----------------XXXXXXXXXXXXXXXXX--RANDOM--XXXXXXXXXXXXXXXXXXX--------------- */}
             </div>
             {/* ---------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---------------------------------- */}
