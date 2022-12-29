@@ -5,7 +5,6 @@ import {
 } from "../ActionTypes/NewUserType";
 
 export const electronicAction = (payload, dispatch) => {
-
     dispatch({
         type: productElectronicActionType,
         payload: payload,

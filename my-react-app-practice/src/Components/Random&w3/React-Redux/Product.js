@@ -17,20 +17,20 @@ const Product = () => {
   })
 
   useEffect(() => {
-  
+
     if (electronicDataReducStore.length === 0) {
       dataElectronics();
     }
     if (jeweleryDataReducStore.length === 0) {
       dataJewelery();
     }
-   
+
   },[]);
 
- const dataElectronics =  () => {
-   fetch('https://fakestoreapi.com/products/category/electronics')
-     .then(res => res.json())
-     .then((json) => electronicAction(json, dispatch));
+  const dataElectronics =  () => {
+    fetch('https://fakestoreapi.com/products/category/electronics')
+      .then(res => res.json())
+      .then((json) => electronicAction(json, dispatch));
   };
 
   const dataJewelery = () => {
@@ -48,12 +48,12 @@ const Product = () => {
     <div>
       <Outlet/>
       <h1 style={{fontSize:'35px'}}>Electronics</h1>
-      <div style={{display:'grid', gridTemplateColumns : 'repeat(3, 1fr)',gap:'10px 20px'}}>
+      <div style={{display:'grid', gridTemplateColumns : 'repeat(2, 1fr)',gap:'10px 20px'}}>
       {electronicDataReducStore.map((d,id) => {
         return (
               <NavLink to={`${d.id}`} key={id}>
                 <div >
-                  <img src={d.image} height='200' width='200'  alt='pic'/>
+                  <img src={d.image} height='150' width='150'  alt='pic'/>
                   <h2>$ { d.price}</h2>
                   <h3>{ d.title}</h3>
                 </div>
@@ -63,12 +63,12 @@ const Product = () => {
       </div>
 
       <h1 style={{ fontSize: '35px' }}>Jewelery</h1>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px 20px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px 20px' }}>
         {jeweleryDataReducStore.map((d, id) => {
           return (
             <NavLink to={`${d.id}`} key={id}>
             <div >
-              <img src={d.image} height='200' width='200' alt='pic' />
+              <img src={d.image} height='150' width='150' alt='pic' />
               <h2>$ {d.price}</h2>
               <h3>{d.title}</h3>
             </div>
