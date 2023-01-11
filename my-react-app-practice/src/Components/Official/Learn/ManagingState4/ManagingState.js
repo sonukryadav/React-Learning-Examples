@@ -1,4 +1,5 @@
 import React, { useState, useReducer, createContext, useContext } from 'react';
+import ReactingToInputWithState1 from './ReactingToInputWithState1';
 import ChoosingTheStateStructure2 from './ChoosingTheStateStructure2';
 
 
@@ -16,6 +17,9 @@ const ManagingState = () => {
             <TaskApp />
             <h2 style={{ color: 'blue', textDecoration: 'underline' }}>Scaling up with reducer and context </h2>
             <TaskApp2 />
+            <h1 style={{ color: 'navy', textDecoration: 'underline' }}>[4.1] ReactingToInputWithState1</h1>
+            <h2 style={{ color: 'blue', textDecoration: 'underline' }}></h2>
+
 
             {/* <ChoosingTheStateStructure2 /> */}
         </div>
