@@ -15,12 +15,10 @@ const ManagingState = () => {
             <TaskApp />
             <h2 style={{ color: 'blue', textDecoration: 'underline' }}>Scaling up with reducer and context </h2>
             <TaskApp2 />
+            <h2 style={{ color: 'blue', textDecoration: 'underline' }}>Preserving and Resetting State</h2>
 
 
             {/* <h2 style={{ color: 'blue', textDecoration: 'underline' }}></h2> */}
-
-
-            {/* <ChoosingTheStateStructure2 /> */}
         </div>
     );
 }
@@ -432,6 +430,10 @@ function Task2({ task}) {
 
 
 //-----xxx---Extracting state logic into a reducer----xxx-----------
+
+// Preserving and Resetting State:
+
+
 
 export default ManagingState;
 
